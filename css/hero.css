@@ -1,0 +1,158 @@
+.hero {
+  padding: 50px 0 50px 0;
+  text-align: center;
+  background: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: visible;
+  width: 100%;
+}
+.hero .bg-overlay {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  margin-left: 25%;
+  width: 50%;
+  height: 100%;
+}
+.hero .bl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 280px;
+  width: 250px;
+  background: url('../img/banners/blog-bg-bl.png') no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .br {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  height: 131px;
+  width: 94px;
+  background: url('../img/banners/koi-gummies.png') no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero ul.breadcumb {
+  list-style-type: none;
+}
+.hero ul.breadcumb li {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8eb35a;
+  font-style: Italic;
+  background: #fff;
+}
+.hero ul.breadcumb li a {
+  color: #333333;
+}
+.hero ul.breadcumb li.pink {
+  color: #f49ac1;
+}
+.hero ul.breadcumb li span {
+  margin: 0 10px 0 10px;
+}
+.side-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 220px;
+  width: 200px;
+  background: url(/img/banners/left.png) no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.leaf {
+  position: absolute;
+  top: -20px;
+  left: 33vw;
+  height: 106px;
+  width: 100px;
+  background: url(/img/banners/leaf.png) no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.side-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 220px;
+  width: 300px;
+  background: url(/img/banners/right.png) no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+.hero.fusions {
+  background: url('/img/banners/fusions-bg.jpg') no-repeat;
+  background-size: cover;
+  padding: 100px 0 100px 0;
+  color: #fff;
+}
+.fusions-logo {
+  position: absolute;
+  height: 151px;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -75px;
+  top: 30%;
+  background: url('/img/banners/fusions-logo2.png') no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero.fusions p {
+  color: #fff;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+}
+.hero.fusions .txt-container {
+  margin: auto;
+  margin-top: 200px;
+}
+.hero.fusions .txt-container small {
+  font-style: italic;
+  font-size: 14px;
+  color: #eee;
+  margin-top: -10px;
+}
+.hero.fusions .hero-container {
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .hero.fusions .txt-container {
+    width: 50%;
+  }
+  .hero ul.breadcumb li {
+    font-size: 16px;
+  }
+  .hero ul.breadcumb li span {
+    margin: 0 15px 0 15px;
+  }
+}
+@media (min-width: 992px) {
+  .hero.fusions p {
+    font-size: 20px;
+  }
+}

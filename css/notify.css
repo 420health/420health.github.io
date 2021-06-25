@@ -1,0 +1,31 @@
+.alert-minimalist {
+  background-color: #fff;
+  border-color: #8eb35a;
+  border-radius: 3px;
+  color: #959595;
+  padding: 10px;
+}
+.alert-minimalist > [data-notify="dismiss"] {
+  margin-top: -5px;
+  margin-right: -5px;
+}
+.alert-minimalist > [data-notify="icon"] {
+  height: 50px;
+  margin-right: 12px;
+}
+.alert-minimalist > [data-notify="title"] {
+  color: #333333;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.alert-minimalist > [data-notify="message"] {
+  font-size: 100%;
+  color: #8eb35a;
+  font-weight: bold;
+}
+@media (min-width: 768px) {
+  .alert-minimalist {
+    right: 20px;
+  }
+}

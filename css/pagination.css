@@ -1,0 +1,48 @@
+.pagination {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.pagination .page-link {
+  padding: 10px 16px;
+  border-radius: 50%;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #696969;
+  border: none;
+}
+.pagination .page-item.active .page-link {
+  color: #ffffff;
+  background-color: #8eb35a;
+  text-decoration: none;
+}
+.pagination .page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.pagination .page-item:last-child .page-link {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.pagination .page-item .page-link:hover {
+  color: #ffffff;
+  background-color: #8eb35a;
+  text-decoration: none;
+}
+.pagination .end.page-item .page-link:hover {
+  color: #8eb35a;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.pagination .page-item {
+  margin-right: 0.5rem;
+}
+.pagination .page-item.disabled .page-link {
+  color: #eee;
+}
+.pagination .page-item.dots .page-link {
+  color: #696969;
+  pointer-events: none;
+}

@@ -1,0 +1,96 @@
+.text-box {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+.sml-bold {
+  display: inline;
+  background: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #8eb35a;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  opacity: 1;
+}
+.title1 {
+  white-space: normal;
+  font-size: 51px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  visibility: inherit;
+  text-align: center;
+  opacity: 1;
+  margin-bottom: 2rem;
+}
+.subtitle1 {
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  visibility: inherit;
+  text-align: center;
+  opacity: 1;
+  margin-bottom: 3rem;
+}
+.style2 .sml-bold {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 400;
+  color: #8eb35a;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.style2 .title1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #333;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-top: 2rem;
+}
+.style2 .subtitle1 {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  color: #696969;
+}
+.style3 .sml-bold {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 400;
+  color: #8eb35a;
+  text-transform: none;
+  letter-spacing: normal;
+}
+.style3 .title1 {
+  font-size: 52px;
+  font-weight: 700;
+  color: #333;
+  text-transform: none;
+  letter-spacing: normal;
+  margin-top: 2rem;
+}
+.style3 .subtitle1 {
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  color: #696969;
+}
+@media (min-width: 768px) {
+  .style3 .title1 {
+    font-size: 48px;
+  }
+}

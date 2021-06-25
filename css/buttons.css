@@ -1,0 +1,51 @@
+.btn {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding: 10px 10px 10px 10px;
+  font-weight: 700;
+  border-radius: 25px;
+}
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+.btn-primary {
+  border: 1px solid #8eb35a;
+  background-color: #8eb35a;
+}
+.btn-default {
+  color: #8eb35a;
+  border: 1px solid #8eb35a;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active {
+  background-color: transparent;
+  border: 1px solid #8eb35a;
+  color: #8eb35a;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus,
+.btn-default:active:focus,
+.btn-default:active:hover {
+  background-color: #8eb35a;
+  border: 1px solid #8eb35a;
+  color: #fff;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+.card.product .btn {
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+  font-size: 12px;
+}

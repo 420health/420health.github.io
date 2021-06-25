@@ -1,0 +1,361 @@
+.header-img {
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+#myCarousel {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  background-size: cover;
+}
+#myCarousel .carousel-item .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+}
+#myCarousel h4,
+#myCarousel h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 100%;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: none;
+}
+#myCarousel .sml-bold {
+  display: inline;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 900;
+  color: #8eb35a;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  text-align: center;
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#myCarousel .title2 {
+  font-family: 'OpenSans', sans-serif;
+  display: inline;
+  background: transparent;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 900;
+  color: #8eb35a;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 1;
+}
+#myCarousel .title-wrapper {
+  width: 350px;
+  margin: auto;
+}
+#myCarousel .logo-square {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  margin-top: 10%;
+}
+#myCarousel .bgimg {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right top;
+  min-height: 400px;
+  background-color: #F4F3F9;
+}
+#myCarousel .text-wrapper {
+  position: relative;
+  width: 100%;
+}
+#myCarousel p {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#myCarousel .carousel-item a {
+  background: #8eb35a;
+  font-size: 14px;
+  color: #FFF;
+  padding: 13px 32px;
+  display: inline-block;
+}
+#myCarousel .carousel-item .img-row a {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #333;
+  padding: 0;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#myCarousel .carousel-item .img-row a:hover {
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #8eb35a;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+#myCarousel .carousel-item a:hover {
+  background: #8eb35a;
+  text-decoration: none;
+}
+#myCarousel .carousel-item h4,
+#myCarousel .carousel-item h1 {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+#myCarousel .carousel-item p {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}
+#myCarousel .carousel-item a {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+#myCarousel .carousel-item .mask img {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+#myCarousel h1,
+#myCarousel h4,
+#myCarousel p,
+#myCarousel a,
+#myCarousel .carousel-item .mask img {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1.2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+#myCarousel .container {
+  max-width: 1430px;
+}
+#myCarousel .carousel-item {
+  height: 100%;
+  min-height: 450px;
+}
+#myCarousel .carousel-item img {
+  max-height: 200px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  height: 40px;
+  width: 40px;
+  padding: 12px;
+  top: 25%;
+  bottom: auto;
+  transform: translateY(-50%);
+  background-color: #8eb35a;
+}
+.carousel-item {
+  position: relative;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.carousel-fade .carousel-item {
+  opacity: 0;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right,
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-right.active {
+  opacity: 0;
+}
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+.center-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -30%;
+  height: 100%;
+  width: 60%;
+  background: url(/img/slider/420health.jpg) no-repeat;
+  background-position: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.left-col {
+  float: left;
+  text-align: center;
+}
+.right-col {
+  float: right;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #myCarousel .text-wrapper {
+    position: relative;
+    float: left;
+    width: 50%;
+  }
+  #myCarousel .bgimg {
+    background-size: auto 100%;
+  }
+  #myCarousel .carousel-item {
+    height: 100%;
+    min-height: 450px;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    top: 50%;
+  }
+  #myCarousel .carousel-item img {
+    max-height: none;
+  }
+  #myCarousel h4,
+  #myCarousel h1 {
+    font-size: 50px;
+  }
+  #myCarousel p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+  }
+  .carousel-item .row {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .side-right {
+    z-index: 9;
+  }
+}
+@supports (transform-style:preserve-3d) {
+  .carousel-fade .carousel-item-left.active,
+  .carousel-fade .carousel-item-next,
+  .carousel-fade .carousel-item-prev,
+  .carousel-fade .carousel-item-prev.active,
+  .carousel-fade .carousel-item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-fade .carousel-item-left.active,
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item-prev.active,
+.carousel-fade .carousel-item.active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}

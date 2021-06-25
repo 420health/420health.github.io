@@ -1,0 +1,5 @@
+$(function () {
+    
+    simpleCart.empty();
+
+});

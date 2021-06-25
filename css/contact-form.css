@@ -1,0 +1,59 @@
+.contact-form {
+  width: 100%;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 !important;
+  margin-top: -100px;
+  background-color: #ffffff;
+}
+.contact-form input.submit {
+  margin-left: 40%;
+}
+.post-cmt {
+  margin-top: 85px;
+}
+.post-cmt input {
+  width: 100%;
+  padding: 9px 20px 9px 15px;
+  border: 1px solid #f4f4f4;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: "Lato", serif;
+  font-size: 15px;
+  color: #8e8e8e;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 30px;
+}
+.post-cmt input:hover {
+  border: 1px solid #8eb35a;
+}
+.post-cmt input.comt {
+  height: 180px;
+  padding-bottom: 150px;
+}
+.post-cmt input.btn {
+  width: auto;
+  color: #fff;
+  font-weight: 700;
+  border: 1px solid #8eb35a;
+  margin: auto;
+  padding: 12px 20px 12px 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+}
+.post-cmt input.btn:hover {
+  color: #8eb35a;
+}
+.post-cmt .submit-col {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .contact-form {
+    width: 70% !important;
+  }
+}

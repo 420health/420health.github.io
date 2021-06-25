@@ -1,0 +1,54 @@
+.navbar-right {
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+  margin-top: 0;
+  width: 25%;
+  margin-top: -1rem;
+}
+.nav-btns {
+  position: relative;
+  margin: auto;
+}
+.navbar .navbar-cart {
+  padding: 0;
+  height: auto;
+  padding: 3px 20px;
+  text-transform: none;
+  cursor: pointer;
+}
+.navbar-cart.mobile {
+  float: right;
+  padding: 0 10px;
+  margin-top: 22px;
+  margin-right: 25px;
+}
+.navbar-cart i {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding-right: 10px;
+}
+.ion-ios-cart-outline::before,
+.ion-ios-search::before {
+  font-weight: bold;
+  font-size: 24px;
+}
+.btn.viewcart {
+  width: auto;
+}
+@media (min-width: 768px) {
+  .navbar button {
+    margin-top: 5px;
+  }
+  .navbar .navbar-cart {
+    margin-top: 13px;
+  }
+  .navbar-cart.desktop,
+  .navbar-search.desktop {
+    display: inline-block;
+  }
+  .navbar-cart.mobile,
+  .navbar-search.mobile {
+    display: none;
+  }
+}

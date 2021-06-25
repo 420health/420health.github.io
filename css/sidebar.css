@@ -1,0 +1,112 @@
+.card.categories,
+.card.best-sellers {
+  border: none;
+  box-shadow: none;
+}
+.categories .card-title,
+.best-sellers .card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+  min-height: auto;
+  text-align: left;
+}
+.categories .card-body {
+  overflow: hidden;
+}
+.categories ul,
+.best-sellers ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.categories li {
+  color: #8eb35a;
+  padding: 10px 0;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.categories li span {
+  position: relative;
+  text-align: right;
+  float: right;
+  color: #696969;
+  background-color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 99;
+  padding-left: 5px;
+}
+.categories li a:after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: bottom;
+  width: 100%;
+  margin-right: -100%;
+  margin-left: 10px;
+  border-top: 1px solid #f4f4f4;
+  z-index: 98;
+}
+.categories .current-cat a {
+  font-weight: bold;
+}
+.best-sellers li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.best-sellers img {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #f4f4f4;
+  float: left;
+  margin: 0 20px 0 0;
+  padding: 5px;
+}
+.best-sellers h4 {
+  position: relative;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.best-sellers h4 a {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 700;
+}
+.best-sellers h4 a:hover {
+  color: #8eb35a;
+  text-decoration: none;
+}
+.best-sellers h4:after {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: #e7e5e4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translateY(0%);
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.best-sellers li:hover h4:after {
+  width: 50px;
+  background-color: #8eb35a;
+}
+.best-sellers .info > div {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #8eb35a;
+  text-align: left;
+}

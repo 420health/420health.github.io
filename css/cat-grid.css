@@ -1,0 +1,33 @@
+.cat-title {
+  position: relative;
+  width: 100%;
+}
+/* .cat-title h3 {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 900;
+    color: #8eb35a;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+} */
+.cat-title h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 1rem 0;
+  text-align: left;
+  margin-left: 120px;
+}
+.cat-title img {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100px;
+  height: 100px;
+  z-index: 999;
+}
+.cat-title .cat-btn {
+  position: absolute;
+  top: 5px;
+  left: 300px;
+}
